@@ -36,6 +36,21 @@
         .tab-content.active {
             display: block;
         }
+        .bio-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .bio-content img {
+            flex-shrink: 0;
+        }
+        .bio-content p {
+            max-width: 368px;
+        }
+        .tableauPlaceholder {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
     </style>
     <script>
         function openTab(evt, tabName) {
@@ -63,10 +78,10 @@
 
 <div class="content">
     <div id="Bio" class="tab-content active">
-        <img src="https://raw.githubusercontent.com/efhart4/portfolio/main/profile.jpg" alt="Your Photo" style="width:368px;height:348px;">
-        <p> Hi, I’m Evan Hart. I hold a PhD in Economics from the University of Oregon and an MS in Mathematics from the University at Albany. I focus on time series econometrics, forecasting, and applied research.
-
-This site is a collection of my work—feel free to explore!</p>
+        <div class="bio-content">
+            <img src="https://raw.githubusercontent.com/efhart4/portfolio/main/profile.jpg" alt="Your Photo" style="width:368px;height:348px;">
+            <p>Hi, I’m Evan Hart. I hold a PhD in Economics from the University of Oregon and an MS in Mathematics from the University at Albany. I focus on time series econometrics, forecasting, and applied research. This site is a collection of my work—feel free to explore!</p>
+        </div>
     </div>
 
     <div id="DataAnalysis" class="tab-content">
@@ -131,7 +146,6 @@ This site is a collection of my work—feel free to explore!</p>
             </li>
         </ul>
     </div>
-    
 </div>
 
 </body>
