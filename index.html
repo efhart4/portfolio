@@ -11,11 +11,11 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-        .navbar {
+        .navbar, .sub-navbar {
             overflow: hidden;
             background-color: #333;
         }
-        .navbar a {
+        .navbar a, .sub-navbar a {
             float: left;
             display: block;
             color: #f2f2f2;
@@ -23,17 +23,17 @@
             padding: 14px 16px;
             text-decoration: none;
         }
-        .navbar a:hover {
+        .navbar a:hover, .sub-navbar a:hover {
             background-color: #ddd;
             color: black;
         }
         .content {
             padding: 20px;
         }
-        .tab-content {
+        .tab-content, .sub-tab-content {
             display: none;
         }
-        .tab-content.active {
+        .tab-content.active, .sub-tab-content.active {
             display: block;
         }
         .bio-content {
@@ -62,14 +62,27 @@
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
         }
+
+        function openSubTab(evt, subTabName) {
+            var i, subTabContent, subTabLinks;
+            subTabContent = document.getElementsByClassName("sub-tab-content");
+            for (i = 0; i < subTabContent.length; i++) {
+                subTabContent[i].style.display = "none";
+            }
+            subTabLinks = document.getElementsByClassName("sub-tablinks");
+            for (i = 0; i < subTabLinks.length; i++) {
+                subTabLinks[i].className = subTabLinks[i].className.replace(" active", "");
+            }
+            document.getElementById(subTabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
     </script>
 </head>
 <body>
 
 <div class="navbar">
     <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Bio')">Bio</a>
-    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'QuarterlyTaxData')">Exploring Quarterly U.S. State Tax Data</a>
-    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'YearlyTaxData')">Exploring Yearly U.S. State Tax Data</a>
+    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'VisualizingData')">Visualizing Data with Tableau</a>
     <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Research')">Research</a>
 </div>
 
@@ -81,47 +94,55 @@
         </div>
     </div>
 
-    <div id="QuarterlyTaxData" class="tab-content" style="text-align: left;">
-              <div class='tableauPlaceholder' id='viz1740356987595' style='position: relative'>
-            <noscript>
-                <a href='#'>
-                    <img alt='Exploring Quarterly U.S. State Tax Data' src='https://public.tableau.com/static/images/JG/JG8KKCRQ7/1_rss.png' style='border: none' />
-                </a>
-            </noscript>
-            <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='path' value='shared&#47;JG8KKCRQ7' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;JG&#47;JG8KKCRQ7&#47;1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-US' />
-            </object>
+    <div id="VisualizingData" class="tab-content" style="text-align: left;">
+        <h2>Visualizing Data with Tableau</h2>
+        <p>Here you can explore various visualizations created using Tableau. Click on the tabs below to view different visualizations.</p>
+        <div class="sub-navbar">
+            <a href="javascript:void(0)" class="sub-tablinks" onclick="openSubTab(event, 'QuarterlyTaxData')">Exploring Quarterly U.S. State Tax Data</a>
+            <a href="javascript:void(0)" class="sub-tablinks" onclick="openSubTab(event, 'YearlyTaxData')">Exploring Yearly U.S. State Tax Data</a>
         </div>
-        <script type='text/javascript'>
-            var divElement = document.getElementById('viz1740356987595');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            if (divElement.offsetWidth > 800) {
-                vizElement.style.width = '1000px';
-                vizElement.style.height = '827px';
-            } else if (divElement.offsetWidth > 500) {
-                vizElement.style.width = '1000px';
-                vizElement.style.height = '827px';
-            } else {
-                vizElement.style.width = '100%';
-                vizElement.style.height = '727px';
-            }
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-        </script>
-    </div>
 
-    <div id="YearlyTaxData" class="tab-content" style="text-align: left;">
+        <div id="QuarterlyTaxData" class="sub-tab-content" style="text-align: left;">
+            <div class='tableauPlaceholder' id='viz1740356987595' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Exploring Quarterly U.S. State Tax Data' src='https://public.tableau.com/static/images/JG/JG8KKCRQ7/1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='path' value='shared&#47;JG8KKCRQ7' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;JG&#47;JG8KKCRQ7&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1740356987595');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if (divElement.offsetWidth > 800) {
+                    vizElement.style.width = '1000px';
+                    vizElement.style.height = '827px';
+                } else if (divElement.offsetWidth > 500) {
+                    vizElement.style.width = '1000px';
+                    vizElement.style.height = '827px';
+                } else {
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '727px';
+                }
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </div>
+
+        <div id="YearlyTaxData" class="sub-tab-content" style="text-align: left;">
             <div class='tableauPlaceholder' id='viz1740360935812' style='position: relative'>
                 <noscript>
                     <a href='#'>
@@ -161,8 +182,7 @@
                 scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
                 vizElement.parentNode.insertBefore(scriptElement, vizElement);
             </script>
-    
-    
+        </div>
     </div>
 
     <div id="Research" class="tab-content">
