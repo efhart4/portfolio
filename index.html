@@ -47,10 +47,6 @@
         .bio-content p {
             max-width: 368px;
         }
-        .tableauPlaceholder {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
     </style>
     <script>
         function openTab(evt, tabName) {
@@ -72,7 +68,8 @@
 
 <div class="navbar">
     <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Bio')">Bio</a>
-    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'DataPresentation')">Data Presentation</a>
+    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'QuarterlyTaxData')">Exploring Quarterly U.S. State Tax Data</a>
+    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'YearlyTaxData')">Exploring Yearly U.S. State Tax Data</a>
     <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Research')">Research</a>
 </div>
 
@@ -84,32 +81,7 @@
         </div>
     </div>
 
-    <div id="DataPresentation" class="tab-content" style="text-align: left;">
-        <h2>Data Presentation</h2>
-        <div class='tableauPlaceholder' id='viz1737759986507' style='position: relative; margin-bottom: 20px;'>
-            <noscript>
-                <a href='#'>
-                    <img alt='Exploring Yearly U.S. State Tax Data' src='https://public.tableau.com/static/images/Ex/ExploreTaxData/Dashboard1/1_rss.png' style='border: none' />
-                </a>
-            </noscript>
-            <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='site_root' value='' />
-                <param name='name' value='ExploreTaxData&#47;Dashboard1' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExploreTaxData&#47;Dashboard1&#47;1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-US' />
-                <param name='filter' value='publish=yes' />
-            </object>
-        </div>
-    
+    <div id="QuarterlyTaxData" class="tab-content" style="text-align: left;">
         <div class='tableauPlaceholder' id='viz1737759986508' style='position: relative; margin-bottom: 20px;'>
             <noscript>
                 <a href='#'>
@@ -134,63 +106,46 @@
             </object>
         </div>
     </div>
-    <script type='text/javascript'>
-        var divElement1 = document.getElementById('viz1737759986507');
-        var vizElement1 = divElement1.getElementsByTagName('object')[0];
-        if (divElement1.offsetWidth > 800) {
-            vizElement1.style.width = '1000px';
-            vizElement1.style.height = '827px';
-        } else if (divElement1.offsetWidth > 500) {
-            vizElement1.style.width = '1000px';
-            vizElement1.style.height = '827px';
-        } else {
-            vizElement1.style.width = '100%';
-            vizElement1.style.height = '727px';
-        }
-        var scriptElement1 = document.createElement('script');
-        scriptElement1.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement1.parentNode.insertBefore(scriptElement1, vizElement1);
-    
-        var divElement2 = document.getElementById('viz1737759986508');
-        var vizElement2 = divElement2.getElementsByTagName('object')[0];
-        if (divElement2.offsetWidth > 800) {
-            vizElement2.style.width = '1000px';
-            vizElement2.style.height = '827px';
-        } else if (divElement2.offsetWidth > 500) {
-            vizElement2.style.width = '1000px';
-            vizElement2.style.height = '827px';
-        } else {
-            vizElement2.style.width = '100%';
-            vizElement2.style.height = '727px';
-        }
-        var scriptElement2 = document.createElement('script');
-        scriptElement2.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement2.parentNode.insertBefore(scriptElement2, vizElement2);
-    </script>
-    
+
+    <div id="YearlyTaxData" class="tab-content" style="text-align: left;">
+        <div class='tableauPlaceholder' id='viz1737759986507' style='position: relative; margin-bottom: 20px;'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Exploring Yearly U.S. State Tax Data' src='https://public.tableau.com/static/images/Ex/ExploreTaxData/Dashboard1/1_rss.png' style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='ExploreTaxData&#47;Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExploreTaxData&#47;Dashboard1&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+                <param name='filter' value='publish=yes' />
+            </object>
+        </div>
+    </div>
+
     <div id="Research" class="tab-content">
         <h2>Research</h2>
         <ul>
             <li>
-         <h3><a href="https://github.com/efhart4/Estimating-Variation-in-a-Sticky-Information-Phillips-Curve/blob/main/Time%20Variation%20in%20the%20Sticky%20Information%20Phillips%20Curve.pdf">
-                Estimating Variation in a Sticky Information Phillips Curve (2024) </a>
-        </h3>
+                <h3><a href="https://github.com/efhart4/Estimating-Variation-in-a-Sticky-Information-Phillips-Curve/blob/main/Time%20Variation%20in%20the%20Sticky%20Information%20Phillips%20Curve.pdf">Estimating Variation in a Sticky Information Phillips Curve (2024)</a></h3>
                 <p>In this research, I investigate the empirical evidence of structural parameter variation within the sticky information model, exploring both the statistical significance and economic implications of changing attention patterns among firms. Using survey data from the survey of professional forecasters, collected by the Federal Reserve Bank of Philadelphia, I estimate models capturing firms’ attention to macroeconomic conditions, uncovering a systematic decline in attention over time. This decline is linked to a reduction in the expected volatility of prices. Through Bayesian model comparison, I assess the performance of fixed and time-varying attention models, finding that while a fixed parameter model is favored, the time-varying model still holds relevance.</p>
             </li>
             <li>
-                <h3>
-                    <a href="https://github.com/efhart4/A-Sequential-Monte-Carlo-Approach/blob/main/A%20Sequential%20Monte%20Carlo%20Approach%20to%20Endogenous%20Time%20Varying%20Parameter%20Models.pdf">
-                    A Sequential Monte Carlo Approach to Endogenous Time Varying Parameter Models (2023) 
-                    </a>
-                </h3>
+                <h3><a href="https://github.com/efhart4/A-Sequential-Monte-Carlo-Approach/blob/main/A%20Sequential%20Monte%20Carlo%20Approach%20to%20Endogenous%20Time%20Varying%20Parameter%20Models.pdf">A Sequential Monte Carlo Approach to Endogenous Time Varying Parameter Models (2023)</a></h3>
                 <p>In this research, I developed an approach that integrates Sequential Monte Carlo filtering techniques with instrumental variables to improve the estimation accuracy of dynamic systems. I implemented Bayesian estimation procedures to assess model performance, generating precise parameter estimates and enhancing prediction of unobserved variables. The project involved extensive use of simulation techniques and statistical programming, primarily in Python and R, applying both time series econometrics and advanced statistical inference.</p>
             </li>
             <li>
-                <h3>
-                    <a href="https://github.com/efhart4/Short-Term-Solar-Forecasting/blob/main/Short%20Term%20Solar%20Forecasting.pdf">
-                        Short Term Solar Forecasting (2019)
-                    </a>
-                </h3>
+                <h3><a href="https://github.com/efhart4/Short-Term-Solar-Forecasting/blob/main/Short%20Term%20Solar%20Forecasting.pdf">Short Term Solar Forecasting (2019)</a></h3>
                 <p>In this project, I developed a Nonlinear Autoregressive Neural Network with Exogenous Inputs (NARXNET) to forecast solar irradiance ten minutes ahead, using inputs such as solar zenith angle, humidity, and wind data. The process involved collecting, cleaning, and preprocessing large environmental datasets to create accurate training inputs for the neural network. I constructed and fine-tuned the NARXNET model, adjusting parameters to balance fitting and generalization while improving its performance against alternative forecasting methods.</p>
             </li>
         </ul>
