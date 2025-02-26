@@ -84,6 +84,7 @@
     <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Bio')">Bio</a>
     <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'VisualizingData')">Visualizing Data with Tableau</a>
     <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Research')">Research</a>
+    <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Programming')">Programming</a>
 </div>
 
 <div class="content">
@@ -94,6 +95,7 @@
         </div>
     </div>
 
+        
     <div id="VisualizingData" class="tab-content" style="text-align: left;">
         <h2>Visualizing Data with Tableau</h2>
         <p>Here you can explore various visualizations created using Tableau. Click on the tabs below to view different visualizations.</p>
@@ -102,7 +104,7 @@
             <a href="javascript:void(0)" class="sub-tablinks" onclick="openSubTab(event, 'YearlyTaxData')">Exploring Yearly U.S. State Tax Data</a>
             <a href="javascript:void(0)" class="sub-tablinks" onclick="openSubTab(event, 'WeeklyEmploymentData')">Exploring Weekly U.S. State Employment Data</a>
         </div>
-    
+
         <div id="QuarterlyTaxData" class="sub-tab-content" style="text-align: left;">
             <div class='tableauPlaceholder' id='viz1740491686614' style='position: relative'>
                 <noscript>
@@ -144,7 +146,7 @@
                 vizElement.parentNode.insertBefore(scriptElement, vizElement);
             </script>
         </div>
-    
+
         <div id="YearlyTaxData" class="sub-tab-content" style="text-align: left;">
             <div class='tableauPlaceholder' id='viz1740360935812' style='position: relative'>
                 <noscript>
@@ -186,93 +188,50 @@
                 vizElement.parentNode.insertBefore(scriptElement, vizElement);
             </script>
         </div>
-    
-        <div id="WeeklyEmploymentData" class="sub-tab-content" style="text-align: left;">
-            <div class='tableauPlaceholder' id='viz1740440110217' style='position: relative'>
-                <noscript>
-                    <a href='#'>
-                        <img alt='Exploring Weekly U.S. State Employment Data' src='https://public.tableau.com/static/images/Ex/ExploringWeeklyU_S_StateEmploymentData/Dashboard1/1_rss.png' style='border: none' />
-                    </a>
-                </noscript>
-                <object class='tableauViz' style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                    <param name='embed_code_version' value='3' />
-                    <param name='site_root' value='' />
-                    <param name='name' value='ExploringWeeklyU_S_StateEmploymentData&#47;Dashboard1' />
-                    <param name='tabs' value='no' />
-                    <param name='toolbar' value='yes' />
-                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExploringWeeklyU_S_StateEmploymentData&#47;Dashboard1&#47;1.png' />
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en-US' />
-                </object>
-            </div>
-            <script type='text/javascript'>
-                var divElement = document.getElementById('viz1740440110217');
-                var vizElement = divElement.getElementsByTagName('object')[0];
-                if (divElement.offsetWidth > 800) {
-                    vizElement.style.width = '1000px';
-                    vizElement.style.height = '827px';
-                } else if (divElement.offsetWidth > 500) {
-                    vizElement.style.width = '1000px';
-                    vizElement.style.height = '827px';
-                } else {
-                    vizElement.style.width = '100%';
-                    vizElement.style.height = '727px';
-                }
-                var scriptElement = document.createElement('script');
-                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                vizElement.parentNode.insertBefore(scriptElement, vizElement);
-            </script>
-        </div>
-    </div>
-    
-        <div id="WeeklyEmploymentData" class="sub-tab-content" style="text-align: left;">
-            <div class='tableauPlaceholder' id='viz1740440110217' style='position: relative'>
-                <noscript>
-                    <a href='#'>
-                        <img alt='Exploring Weekly U.S. State Employment Data' src='https://public.tableau.com/static/images/Ex/ExploringWeeklyU_S_StateEmploymentData/Dashboard1/1_rss.png' style='border: none' />
-                    </a>
-                </noscript>
-                <object class='tableauViz' style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                    <param name='embed_code_version' value='3' />
-                    <param name='site_root' value='' />
-                    <param name='name' value='ExploringWeeklyU_S_StateEmploymentData&#47;Dashboard1' />
-                    <param name='tabs' value='no' />
-                    <param name='toolbar' value='yes' />
-                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExploringWeeklyU_S_StateEmploymentData&#47;Dashboard1&#47;1.png' />
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en-US' />
-                </object>
-            </div>
-            <script type='text/javascript'>
-                var divElement = document.getElementById('viz1740440110217');
-                var vizElement = divElement.getElementsByTagName('object')[0];
-                if (divElement.offsetWidth > 800) {
-                    vizElement.style.width = '1000px';
-                    vizElement.style.height = '827px';
-                } else if (divElement.offsetWidth > 500) {
-                    vizElement.style.width = '1000px';
-                    vizElement.style.height = '827px';
-                } else {
-                    vizElement.style.width = '100%';
-                    vizElement.style.height = '727px';
-                }
-                var scriptElement = document.createElement('script');
-                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                vizElement.parentNode.insertBefore(scriptElement, vizElement);
-            </script>
-        </div>
-    </div>
 
+        <div id="WeeklyEmploymentData" class="sub-tab-content" style="text-align: left;">
+            <div class='tableauPlaceholder' id='viz1740440110217' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Exploring Weekly U.S. State Employment Data' src='https://public.tableau.com/static/images/Ex/ExploringWeeklyU_S_StateEmploymentData/Dashboard1/1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='ExploringWeeklyU_S_StateEmploymentData&#47;Dashboard1' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExploringWeeklyU_S_StateEmploymentData&#47;Dashboard1&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1740440110217');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if (divElement.offsetWidth > 800) {
+                    vizElement.style.width = '1000px';
+                    vizElement.style.height = '827px';
+                } else if (divElement.offsetWidth > 500) {
+                    vizElement.style.width = '1000px';
+                    vizElement.style.height = '827px';
+                } else {
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '727px';
+                }
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </div>
+    </div>
+    
     <div id="Research" class="tab-content">
         <ul>
             <li>
@@ -289,6 +248,23 @@
             </li>
         </ul>
     </div>
+
+
+    <div id="Programming" class="tab-content">
+        <ul>
+            <li>
+                <h3>Quarterly Tax Data</h3>
+                <p>In this project, I collected quarterly U.S. state tax data, aggregated it for analysis, and presented it in a Tableau Dashboard.</p>
+                <ul>
+                    <li><a href="https://github.com/efhart4/Tax-Data/blob/main/get%20quarterly%20data%20online.py" target="_blank">Data Collection</a>: Gathering raw tax data from multiple pages on the census website and storing them locally.</li>
+                    <li><a href="https://github.com/efhart4/Tax-Data/blob/main/process%20quarterly%20data%20for%20Tableau.py" target="_blank">Data Aggregation</a>: Processing and combining the collected data to create a comprehensive dataset for analysis.</li>
+                    <li>Visualization: The aggregated data can be found in the <strong>Visualizing Data with Tableau</strong> section of this website.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
 </div>
 
 </body>
